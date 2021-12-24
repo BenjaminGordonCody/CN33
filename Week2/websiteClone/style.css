@@ -1,0 +1,31 @@
+div {
+  /* min-width: 100px; */
+  min-height: 100px;
+  /* border: solid 1px black; */
+  padding: 0px;
+  margin: 0px;
+  flex: 1;
+}
+
+img {
+  max-width: inherit;
+}
+
+#wholePageBounding {
+  background-color: antiquewhite;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+#leftNav {
+  max-width: 20vw;
+  background-color: aquamarine;
+}
+
+#topNav {
+  max-height: 5vh;
+  background-color: cadetblue;
+}
