@@ -12,10 +12,18 @@ img {
   max-width: inherit;
 }
 
+p,
+li {
+  font-family: sans-serif;
+}
+
 /* Major page divisions*/
+body {
+  margin: 0px;
+}
 #wholePageBounding {
-  background-image: linear-gradient(rgba(255, 255, 255, 0), lightgrey);
-  padding: 25px;
+  background-color: rgb(246, 246, 246);
+  padding: 0px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -24,12 +32,19 @@ img {
 
 #leftNav {
   max-width: 20vw;
-  background-color: aquamarine;
 }
 
+#mainContent {
+  border-left: 1px solid rgb(167, 215, 249);
+}
 #topNav {
   /* background-color: cadetblue; */
-  height: 10vh;
+  height: 4vh;
+  padding-top: 50px;
+}
+
+article {
+  background-color: white;
 }
 
 /* Left Nav */
@@ -47,7 +62,22 @@ img {
 }
 
 .navHeading {
-  color: lightcoral;
+  display: block;
+  font-size: 0.75em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  border-image-slice: 2;
+  border-width: 1px;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1),
+    rgba(199, 204, 209, 1),
+    rgba(255, 255, 255, 1)
+  );
 }
 
 /* topNav */
@@ -61,15 +91,34 @@ img {
   align-items: stretch;
   justify-content: stretch;
   height: inherit;
+  background-color: none;
 }
 
 #topNav li {
   width: 15px;
   flex: 1;
-  border-top: 0px;
-  border: 2px solid;
+
+  border: 2px solid rgba(168, 216, 249, 1);
   border-image-slice: 2;
   border-width: 1px;
-  border-image-source: linear-gradient(rgba(255, 255, 255, 0), black);
-  background-image: linear-gradient(rgba(177, 177, 177, 0), rgb(212, 233, 240));
+  border-top: 0px;
+  border-image-source: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(168, 216, 249, 1)
+  );
+  background-image: linear-gradient(
+    rgba(233, 243, 249, 0),
+    rgba(233, 243, 249, 1)
+  );
+}
+
+/* main content */
+h1 {
+  margin-top: 0px;
+}
+
+#topNav .whiteTopNav {
+  background-color: white;
+  background-image: linear-gradient(rgb(246, 246, 246), rgba(255, 255, 255, 1));
+  border-bottom: none;
 }
