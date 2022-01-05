@@ -9,3 +9,4 @@ We were tasked with cloning the appearance of well known website. I chose wikipe
 ## What would I improve next time round?
 * I would have used a table, rather than an unordered list, for the infobox on the right of the screen. (This is how the original page does it)
 * Though grid worked fine for recreating my original screen-grab, flexbox would have been more efficient for making reactive layouts.
+* I would add flexbox styling to the topNav bar, and replaced "---------" and "search bar" with a blank tab and a white div, respectively. 
